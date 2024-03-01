@@ -10,4 +10,5 @@ urlpatterns=[
     path("about",views.about,name="about"),
     path("teachers",views.teachers,name="teachers"),
     path("contact",views.contact,name="contact"),
+    path("grade",views.grade,name="grade")
 ]

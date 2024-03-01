@@ -3,7 +3,7 @@
 {% block body %}
 <section class="form-container">
 
-   <form action="" method="post" enctype="multipart/form-data">
+   <form action="" method="post" enctype="multipart/form-data" id="inputform">
       <h3>Essay Input </h3>
       {% csrf_token %}
       <p>Essay: <span>*</span></p>
@@ -22,5 +22,5 @@
 
 {% block script %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-<script src="{% static 'automatedgrader/js/index.js' %}" ></script>
+<script src="{% static 'automatedgrader/js/index.js' %}"  defer></script>
 {% endblock %}

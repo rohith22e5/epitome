@@ -172,7 +172,7 @@ def grade(request):
             if essay_file:
                 os.remove(file_path)
 
-            return JsonResponse({"grade": y_pred[0][0]})
+            return JsonResponse({"grade": y_pred})
         else:
             return render(request, "automatedgrader/index.html")
 
