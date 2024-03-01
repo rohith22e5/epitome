@@ -1,0 +1,33 @@
+{% extends "automatedgrader/layout.html" %}
+{% load static %}
+
+{% block body %}
+<section class="home-grid">
+ 
+    <h1 class="heading">quick options</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <h3 class="title">likes and comments</h3>
+          <p class="likes">total likes : <span>25</span></p>
+          <a href="#" class="inline-btn">view likes</a>
+          <p class="likes">total comments : <span>12</span></p>
+          <a href="#" class="inline-btn">view comments</a>
+          <p class="likes">saved playlists : <span>4</span></p>
+          <a href="#" class="inline-btn">view playlists</a>
+       </div>
+ 
+ 
+       </div>
+       <div>
+          <img src = "/images/sched.jpg">
+       </div>
+ 
+ </section>
+{% endblock %}
+
+{% block script %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<script src="{% static 'automatedgrader/js/account.js' %}" ></script>
+{% endblock %}
